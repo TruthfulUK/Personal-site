@@ -13,11 +13,13 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 5vh;
 }
 
 #container {
   max-width: 450px;
-  margin: 10vh;
+  margin: auto;
+  text-align: center;
 
   h1 {
     font-family: $font;
@@ -38,7 +40,7 @@ html {
   }
 
   section {
-    margin-top: 10vh;
+    margin-top: 20vh;
 
     i {
       color: #fff;
@@ -51,8 +53,9 @@ html {
 
     ul {
       padding: 0;
+      margin: auto;
       li {
-        float: left;
+        display: inline;
         list-style-type: none;
         padding: 0 10px;
         a {
