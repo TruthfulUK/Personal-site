@@ -1,13 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300);
-html {
+body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 5vh;
+  min-height: 100%;
 }
 
+@media only screen and (max-device-width: 736px) {
+  body {
+    background-image: url("../img/bg-mobile.jpg");
+  }
+}
+@media only screen and (max-device-width: 450px) {
+  body {
+    background-image: url("../img/bg-mobile-portrait.jpg");
+  }
+}
 #container {
   max-width: 450px;
   margin: auto;
@@ -16,7 +27,7 @@ html {
 #container h1, #container h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 5em;
   text-transform: uppercase;
   color: #fff;
   -webkit-text-shadow: 0px 1px 1px black;
@@ -26,9 +37,9 @@ html {
 #container h2 {
   font-weight: 400;
   text-transform: none;
-  font-size: 20px;
+  font-size: 1.4em;
   clear: both;
-  margin-top: 6vh;
+  margin-top: 5vh;
 }
 #container section {
   margin-top: 20vh;
@@ -53,7 +64,7 @@ html {
 }
 #container section ul li a {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: 300;
   color: #fff;
   text-decoration: none;

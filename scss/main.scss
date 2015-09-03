@@ -7,13 +7,26 @@ $light: 300;
 $bold: 800;
 $shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 
-html {
+body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 5vh;
+  min-height: 100%;
+}
+
+@media only screen and (max-device-width : 736px) {
+  body {
+    background-image: url('../img/bg-mobile.jpg');
+  }
+}
+
+@media only screen and (max-device-width : 450px) {
+  body {
+    background-image: url('../img/bg-mobile-portrait.jpg');
+  }
 }
 
 #container {
@@ -24,7 +37,7 @@ html {
   h1 {
     font-family: $font;
     font-weight: $bold;
-    font-size: 64px;
+    font-size: 5em;
     text-transform: uppercase;
     color: #fff;
     @include text-shadow($shadow);
@@ -34,9 +47,9 @@ html {
     @extend h1;
     font-weight: $normal;
     text-transform: none;
-    font-size: 20px;
+    font-size: 1.4em;
     clear: both;
-    margin-top: 6vh;
+    margin-top: 5vh;
   }
 
   section {
@@ -60,7 +73,7 @@ html {
         padding: 0 10px;
         a {
           font-family: $font;
-          font-size: 14px;
+          font-size: 0.9em;
           font-weight: $light;
           color: #fff;
           text-decoration: none;
@@ -72,5 +85,4 @@ html {
       }
     }
   }
-
 }
